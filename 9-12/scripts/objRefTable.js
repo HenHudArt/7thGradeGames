@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.scrollto,
+		C3.Behaviors.EightDir,
+		C3.Behaviors.MoveTo,
+		C3.Plugins.Text,
+		C3.Behaviors.Bullet,
+		C3.Plugins.Keyboard,
+		C3.Plugins.Button,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.System.Acts.SubVar,
+		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Sprite.Cnds.OnDestroyed,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Behaviors.MoveTo.Acts.MoveToObject,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.Sprite.Cnds.OnCreated,
+		C3.Plugins.Sprite.Acts.SetAngle,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.CompareTime
+	];
+};
+self.C3_JsPropNameTable = [
+	{ScrollTo: 0},
+	{"8Direction": 0},
+	{Sprite4: 0},
+	{MoveTo: 0},
+	{Sprite5: 0},
+	{HEALTH: 0},
+	{Sprite9: 0},
+	{Sprite: 0},
+	{Bullet: 0},
+	{bullet: 0},
+	{Keyboard: 0},
+	{Text: 0},
+	{youWin: 0},
+	{Button: 0},
+	{RESTART: 0},
+	{AGAIn: 0},
+	{INSTRUCTION: 0},
+	{timee: 0},
+	{Zombie: 0}
+];
+
+self.InstanceType = {
+	Sprite4: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	HEALTH: class extends self.ITextInstance {},
+	Sprite9: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	bullet: class extends self.ISpriteInstance {},
+	Keyboard: class extends self.IInstance {},
+	Text: class extends self.ITextInstance {},
+	youWin: class extends self.ITextInstance {},
+	Button: class extends self.IButtonInstance {},
+	RESTART: class extends self.IButtonInstance {},
+	AGAIn: class extends self.IButtonInstance {},
+	INSTRUCTION: class extends self.ITextInstance {},
+	timee: class extends self.ITextInstance {}
+}
