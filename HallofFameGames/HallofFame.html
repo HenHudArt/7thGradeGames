@@ -19,6 +19,23 @@
         .banner {
    	    width: 100px;
     	height: auto;  }
+
+        .container {
+          display: flex; /* Activates Flexbox layout */
+          gap: 20px;     /* Adds space between the divs */
+        }
+        
+        .div1 {
+          flex: 1; /* Both divs take up equal space */
+          background-color: #f0a3ff; /* Example styling */
+          padding: 20px;
+        }
+        
+        .div2 {
+          flex: 1; /* Both divs take up equal space */
+          background-color: #a3f0ff; /* Example styling */
+          padding: 20px;
+        }
         
     </style>
 </head>
@@ -27,18 +44,23 @@
     <div>
     <img src="hofimages/HoF_Banner.png" class="banner">
     </div>
-
+    
+   <div class="container-grid">
+   <div >Content for Div 1</div>
+ 
     <div>
     <h3>Welcome to the BMMS Online Arcade!</h2>
     </div>
         
-    <div class="column">
+    <div class="div1">
     <h2>7th Grade</h2>
     <a href="2-1/index.html" target="_blank">2-1</a>
      <p></p>
     <a href="2-2/index.html" target="_blank">2-2</a>
      <p></p>
+    </div>
 
+     <div class="div2">Content for Div 2</div>
     <h2>6th Grade</h2>
     <a href="9-1/index.html" target="_blank">9-1</a>
      <p></p>
