@@ -20,6 +20,10 @@
 <body>
 
     <div>
+    <img src="HoF_Banner">
+    </div>
+
+    <div>
     <h2>Welcome to the BMMS Online Arcade!</h2>
     <h1>HALL OF FAME ARCADE</h1>
     </div>
