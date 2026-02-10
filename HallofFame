@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>7th Grade Arcade Games</title>
+    <title>BMMS HALL OF FAME GAMES</title>
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; background-color: black; color: white;}
         a { color: #fc03ec; text-decoration: none; font-weight: bold; font-size: 200%; }
@@ -20,7 +20,8 @@
 <body>
 
     <div>
-    <h1>Welcome to the BMMS Online Arcade!</h1>
+    <h2>Welcome to the BMMS Online Arcade!</h2>
+    <h1>HALL OF FAME ARCADE</h1>
     </div>
 
         
