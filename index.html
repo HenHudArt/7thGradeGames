@@ -25,6 +25,23 @@
         padding-bottom: 20px;
         border: 2px purple;
       }
+
+        .container {
+          display: flex; /* Activates Flexbox layout */
+          gap: 20px;     /* Adds space between the divs */
+        }
+        
+        .div1 {
+          flex: 1; /* Both divs take up equal space */
+          background-color: #0e3773; /* Example styling */
+          padding: 20px;
+        }
+        
+        .div2 {
+          flex: 1; /* Both divs take up equal space */
+          background-color: #621f8f; /* Example styling */
+          padding: 20px;
+        }
         
     </style>
 </head>
@@ -39,7 +56,9 @@
     </div>
 
         
-    <div class="column">
+    <div class="container">
+        
+    <div class="div1">
     <h2>MOD 2</h2>
     <a href="2-1/index.html" target="_blank">2-1</a>
      <p></p>
@@ -69,6 +88,7 @@
      <p></p>
     <a href="2-14/index.html" target="_blank">2-14</a>
 
+    <div class="div2">
     <h2>MOD 9</h2>
     <a href="9-1/index.html" target="_blank">9-1</a>
      <p></p>
@@ -97,13 +117,15 @@
     <a href="9-13/index.html" target="_blank">9-13</a>
      <p></p>
     <a href="9-14/index.html" target="_blank">9-14</a>
-
     </div>
 
+    </div>
+        
      <a href="#" target="_blank">Check out the HALL OF FAME!</a>
 </body>
 
 </html>
+
 
 
 
