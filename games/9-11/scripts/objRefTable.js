@@ -1,0 +1,72 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.scrollto,
+		C3.Behaviors.Platform,
+		C3.Behaviors.Bullet,
+		C3.Plugins.Keyboard,
+		C3.Plugins.Mouse,
+		C3.Plugins.Text,
+		C3.Behaviors.Anchor,
+		C3.Plugins.HTMLElement,
+		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Behaviors.Platform.Acts.SetEnabled,
+		C3.Behaviors.Platform.Acts.SetVectorY,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.ResetEventVar
+	];
+};
+self.C3_JsPropNameTable = [
+	{ScrollTo: 0},
+	{Platform: 0},
+	{Bullet: 0},
+	{HappyGilmore: 0},
+	{Shooter: 0},
+	{Keyboard: 0},
+	{Mouse: 0},
+	{playScreenBG: 0},
+	{BlueThing: 0},
+	{thePipe: 0},
+	{HappyText: 0},
+	{HappyText2: 0},
+	{finish: 0},
+	{MadHappy: 0},
+	{GAMEOVER: 0},
+	{PlayButton: 0},
+	{BG: 0},
+	{Sprite: 0},
+	{invis: 0},
+	{Anchor: 0},
+	{Score: 0},
+	{InstructionsPopUp: 0},
+	{scoreIs: 0}
+];
+
+self.InstanceType = {
+	HappyGilmore: class extends self.ISpriteInstance {},
+	Shooter: class extends self.ISpriteInstance {},
+	Keyboard: class extends self.IInstance {},
+	Mouse: class extends self.IInstance {},
+	playScreenBG: class extends self.ISpriteInstance {},
+	BlueThing: class extends self.ISpriteInstance {},
+	thePipe: class extends self.ISpriteInstance {},
+	HappyText: class extends self.ITextInstance {},
+	HappyText2: class extends self.ITextInstance {},
+	finish: class extends self.ISpriteInstance {},
+	MadHappy: class extends self.ISpriteInstance {},
+	GAMEOVER: class extends self.ITextInstance {},
+	PlayButton: class extends self.ISpriteInstance {},
+	BG: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	invis: class extends self.ISpriteInstance {},
+	Score: class extends self.ITextInstance {},
+	InstructionsPopUp: class extends self.IHTMLElementInstance {},
+	scoreIs: class extends self.ITextInstance {}
+}
