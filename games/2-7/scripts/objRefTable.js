@@ -1,0 +1,73 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Text,
+		C3.Plugins.Button,
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite,
+		C3.Behaviors.scrollto,
+		C3.Behaviors.Platform,
+		C3.Behaviors.Follow,
+		C3.Plugins.Touch,
+		C3.Behaviors.solid,
+		C3.Plugins.Mouse,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.System.Acts.SubVar,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.Follow.Acts.FollowObject,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Button.Cnds.OnClicked
+	];
+};
+self.C3_JsPropNameTable = [
+	{Text: 0},
+	{startbutton1: 0},
+	{Text2: 0},
+	{TiledBackground: 0},
+	{health: 0},
+	{ScrollTo: 0},
+	{Platform: 0},
+	{player: 0},
+	{Sprite: 0},
+	{Follow: 0},
+	{chuckEPeas: 0},
+	{Touch: 0},
+	{directions: 0},
+	{Solid: 0},
+	{floor1: 0},
+	{button: 0},
+	{directionstext: 0},
+	{triggerwarning: 0},
+	{Mouse: 0},
+	{directionsbackground: 0},
+	{Sprite3: 0},
+	{portal: 0},
+	{backButton: 0},
+	{Sprite2: 0},
+	{Sprite4: 0},
+	{healthbar: 0}
+];
+
+self.InstanceType = {
+	Text: class extends self.ITextInstance {},
+	startbutton1: class extends self.IButtonInstance {},
+	Text2: class extends self.ITextInstance {},
+	TiledBackground: class extends self.ITiledBackgroundInstance {},
+	player: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	chuckEPeas: class extends self.ISpriteInstance {},
+	Touch: class extends self.IInstance {},
+	directions: class extends self.IButtonInstance {},
+	floor1: class extends self.ISpriteInstance {},
+	button: class extends self.ISpriteInstance {},
+	directionstext: class extends self.ITextInstance {},
+	triggerwarning: class extends self.ITextInstance {},
+	Mouse: class extends self.IInstance {},
+	directionsbackground: class extends self.ITiledBackgroundInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	portal: class extends self.ISpriteInstance {},
+	backButton: class extends self.IButtonInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {}
+}
